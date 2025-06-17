@@ -1,4 +1,10 @@
-<?php include('db.php'); ?>
+<?php 
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
+include('db.php'); ?>
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];

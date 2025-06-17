@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$dbname = 's&p_app';
+$dbname = 'social_pixel';
 $user = 'root';
 $pass = ''; 
 
